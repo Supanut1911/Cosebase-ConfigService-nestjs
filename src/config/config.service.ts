@@ -32,11 +32,11 @@ class ConfigService {
     return {
       type: 'postgres',
 
-      host: this.getValue('POSTGRES_HOST'),
-      port: parseInt(this.getValue('POSTGRES_PORT')),
-      username: this.getValue('POSTGRES_USER'),
-      password: this.getValue('POSTGRES_PASSWORD'),
-      database: this.getValue('POSTGRES_DATABASE'),
+      host: this.getValue('PG_HOST'),
+      port: parseInt(this.getValue('PG_PORT')),
+      username: this.getValue('PG_USER'),
+      password: this.getValue('PG_PASSWORD'),
+      database: this.getValue('PG_DATABASE'),
 
       entities: ['**/*.entity{.ts,.js}'],
 
@@ -54,11 +54,11 @@ class ConfigService {
 }
 
 const configService = new ConfigService(process.env).ensureValues([
-  'POSTGRES_HOST',
-  'POSTGRES_PORT',
-  'POSTGRES_USER',
-  'POSTGRES_PASSWORD',
-  'POSTGRES_DATABASE',
+  'PG_HOST',
+  'PG_PORT',
+  'PG_USER',
+  'PG_PASSWORD',
+  'PG_DATABASE',
 ]);
 
 export { configService };
