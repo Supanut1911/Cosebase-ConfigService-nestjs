@@ -6,3 +6,19 @@
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
 ## Codebase for setup nestjs with "configService" to handle the env and variable that set up the lib in module
+
+---
+
+## Cli for install TypeORM and PostgresQL lib
+
+```
+  npm install --save @nestjs/typeorm typeorm pg
+```
+
+---
+
+## Cli for install dotEnv to use process.env
+
+```
+  npm install --save dotenv
+```
